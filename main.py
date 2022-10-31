@@ -92,7 +92,7 @@ def draw(img, p1, p2, sag, thick, colour):
 with open("data.txt", 'r') as op:
     data=op.read()
 data=data.split('\n')
-lines=[eval(i) for i in data]
+lines=[eval(i) for i in data if i!='']
 for obj in lines:
     temp_sag = 0
     pointarray = []
